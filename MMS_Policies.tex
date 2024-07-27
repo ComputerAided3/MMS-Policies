@@ -1,0 +1,488 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+% Link TOC
+\usepackage[hidelinks, hypertexnames=false]{hyperref}
+
+% Margins, etc.
+\usepackage[letterpaper, margin=1in]{geometry}
+
+% Skip paragraphs
+\usepackage{parskip}
+
+% Image Support
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% Layout of itemize and enumerate
+\usepackage{enumitem}
+%\setlist[enumerate]{noitemsep}
+
+% Caption Settings
+% Used to center captions under image in this document
+\usepackage{caption}
+
+% Section Numbering
+\setcounter{secnumdepth}{0}
+
+% No hyphenation
+\usepackage[none]{hyphenat}
+
+% Number formatting
+\usepackage{fmtcount}
+
+% Strikethrough
+\usepackage{ulem}
+
+% Colors
+\usepackage{xcolor}
+
+% Watermarks
+% \usepackage{draftwatermark}
+% \SetWatermarkText{DRAFT}
+% \SetWatermarkScale{6}
+
+% Custom Document commands
+\newcounter{rulecounter}
+
+\newcommand{\newrule}[2]{
+    \stepcounter{rulecounter}
+    \clearpage
+    \begin{minipage}{0.8\linewidth}
+        \textbf{Mines Maker Society}
+        
+        \textbf{Policy \padzeroes[3]\decimal{rulecounter}}
+        
+        \textbf{#1}
+    
+        \vspace{0.5cm}
+        
+        Last Revised #2
+    \end{minipage}%
+    \begin{minipage}{0.2\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{MMS_Logo}
+    \end{minipage}
+    
+    \section{Policy \padzeroes[3]\decimal{rulecounter}: #1}
+}
+
+% Editing: red for removals
+\newcommand{\bremove}[1]{
+    {\color{red}#1}
+}
+
+% Editing: green for additions
+\definecolor{darkgreen}{RGB}{73, 158, 83}
+\newcommand{\badd}[1]{
+    {\color{darkgreen}#1}
+}
+
+% Begin document
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+\null
+\vfill
+
+{\Huge The Rules of the
+
+Blaster Design Factory}
+
+Adopted by the Mines Maker Society on August 18, 2023
+
+\vspace{1.5cm}
+
+\includegraphics[width=0.4\linewidth]{MMS_Logo.png}
+
+\vspace{2cm}
+
+Last Revised: August 18, 2023
+
+Last Generated: \today
+
+\vfill
+
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\raggedright
+
+
+\newrule{Blaster Design Factory Rules}{July 9, 2023}
+
+\subsection{Background and Purpose}
+
+The Mines Maker Society is committed to developing a strong “making community” at Colorado School of Mines. The Maker Society will enable these individuals to make anything that they wish to create in the easiest conceivable way for the person wishing to learn (while complying with Mines’ regulations and all applicable laws). 
+
+This policy outlines rules that govern the Blaster Design Factory and Mines Maker Society.
+
+\subsection{Policy}
+
+In addition to abiding by the Mines Student Code of Conduct, members of the Mines Maker Society and the Makerspace community will adhere to the following guidelines or risk banishment.  
+
+\begin{enumerate}
+    \item No cursing louder than normal speaking volume and never directly at another person.  
+    \item No selling of goods or services under any circumstances in the space.  
+    \item No using machinery/tools/anything in the space to make items for profit.  
+    \item No storing of items in the space unless approved and only in the marked grey bins for the approved time period.  
+    \item Clean up after yourself and the people you let into the space (or make sure they clean up for themselves). This includes wiping the whiteboards after one is done writing. Leave it better than you found it. 
+    \item No playing music loud enough so the offices above the makerspace can hear it between the hours of 7am and 6pm. Absolutely no music with obscene lyrics/messages during this time. Between the hours of 6pm and 7am the next morning (after hours), use best judgement, but stay away from playing music that would be offensive to at least 30\% of the population. If you wonder if it is allowed, err on the side of caution and do not play it. Noise is not an issue during these times unless someone asks you to turn it down. Comply at this point.  
+    \item No writing offensive messages. We are a diverse community. Be respectful. 
+    \item No destroying/stealing Maker Society property.  
+    \item The Maker Society Executive and Leadership Team reserve the right to hold Executive Session in the Blaster Design Factory when necessary, though this should be done outside of open hours when possible. 
+    \item Do not leave your items on tables or workplaces, unattended for longer than 20 minutes.
+\end{enumerate}
+
+This list of rules is not comprehensive. Please always use best judgement in actions and words.
+
+\subsection{Sanctions}
+
+Pursuant to the Bylaws of the Mines Maker Society, SAIL and BSO Guidelines, and the Mines Student Code of Conduct, the Executive Board, in consultation with the Club Advisor and the Leadership Board, may sanction individuals for violating the rules of the Mines Maker Society and Blaster Design Factory. Before an individual is sanctioned, a meeting should be scheduled with them to provide Due Process. 
+
+Sanctions may include, but are not limited to, required safety training, loss of privileges within the Blaster Design Factory, ineligibility to hold Office within the Mines Maker Society, and in exceptional circumstances, loss of access to the Blaster Design Factory.  
+
+\subsection{Review}
+
+This policy shall be reviewed at least annually by Maker Society Leadership. 
+
+
+
+
+
+
+\newrule{3D Printing Rules}{February 27, 2023}
+
+\subsection{Background and Purpose}
+
+The Mines Maker Society is committed to developing a strong “making community” at Colorado School of Mines. The Maker Society will enable these individuals to make anything that they wish to create in the easiest conceivable way for the person wishing to learn (while complying with Mines’ regulations and all applicable laws). 
+
+This policy outlines rules for Maker Society Members and Members of the Mines Community to use the 3D printing resources of the Mines Maker Society. 
+
+\bremove{\subsection{Policy}}
+
+\badd{\subsection{General Rules}}
+
+The following is a list of laws that anyone must abide by to 3D print in Blaster Design Factory. Failure to comply may result in the suspension of 3D Printing rights. 
+
+\begin{enumerate}
+    \item Before slicing your first print talk to a space captain on duty, even if you have 3D printing experience. 
+    \item Fill out the print survey and the Maker Info placard for all prints. 
+    \item Monitor the first layer of the print to make sure it adheres to the build plate. 
+    \bremove{\item Don’t put glue on the 3D printer without Space Captain approval. 
+    Prints longer than 12 hours or over 250 grams require Space Captain approval. This limit may be changed by the Maker Society Leadership Board during high-volume times of the year.
+    \item Only Space Captains are allowed to change filament on the printer.}
+
+    \badd{\item When all printers are in use, printers will operate on a first-come, first-served basis. People wishing to print must put their Blastercards in the Print Queue to get in line for printing. People in the print queue may not leave the BDF for prolonged periods of time and remain in the Print Queue. The Space Captain on duty, Executive/Leadership Board Members, and Space-trusted Directors/Individuals will oversee the use of the Print Queue. Shall a printer become available and the next individual in the print queue not be present, then the open printer shall go to the next present person in the Print Queue.}
+    
+    \item Do not attempt to repair 3D printers, including performing maintenance and/or calibration. Printer Technicians and Maker Society Leadership may designate other trained persons who may maintain printers or perform repairs.
+    
+    \bremove{\item Use of personal filament requires Space Captain approval.}
+    \item One person should not use more than one printer at a time. 
+    \bremove{\item Only trained Space Captains and Makerspace Leadership are allowed to run and process resin prints.}
+    \item Guns, parts for guns, or gun-like parts, porn, and sexual content are not allowed to be printed in the makerspace under any circumstances. If we suspect that your print may break this rule, we will cancel the print and destroy the part.  
+    \item Profane language may only be printed with Space Captain approval and outside of working hours. 
+    \bremove{\item Only PLA and PETG materials with no additives are to be printed in the Blaster Design Factory. Exceptions can be made by the Executive Board.}
+    \item The 3D Printing Guidelines may be adjusted accordingly by the Maker Society Executive Board to accommodate times of the semester with increased traffic. 
+\end{enumerate}
+
+\badd{
+\subsection{Filament Printing}
+
+\begin{itemize}
+    \item Don’t put glue on the 3D printer without Space Captain approval. 
+    Prints longer than 12 hours or over 250 grams require Space Captain approval. This limit may be changed by the Maker Society Leadership Board during high-volume times of the year.
+    \item Only Space Captains and trained individuals are allowed to change filament on the printer. 
+    \item Use of personal filament requires Space Captain approval.
+    \item Only PLA and PETG materials with no additives are to be printed in the Blaster Design Factory. Exceptions can be made by the Executive Board and Technicians. % Note: add technicians to approval process
+\end{itemize}
+
+\subsection{Resin Printing}
+
+\begin{itemize}
+    \item Only trained Space Captains and Makerspace Leadership are allowed to run and process resin prints.
+    \item Any person running resin prints must have completed the EHS Lab Safety and Hazardous Waste Generator Trainings before they are allowed to use the resin printers.
+    \item Refer to the SOPs for the Elegoo Mars 3 and Prusa SL1S Speed when printing. Having access to the SOP without a training from a person approved to SLA print does not constitute proper training to use the resin printers.
+    \item The Executive Board, Leadership Board, and/or Technicians shall maintain a list of people approved to use the resin printers.
+\end{itemize}
+
+}
+
+\subsection{Sanctions}
+
+Individuals and groups who violate 3D printing rules may be sanctioned by the Executive Board in accordance with the procedures established in Mines Maker Society Rules. The most appropriate sanction for violating 3D printing rules is recommended to be a warning, followed by a loss of 3D printing privileges for additional violations. In addition, for violation of Section 2.11, a meeting will be scheduled with the offending individuals or groups to discuss sanctions and/or other repercussions. 
+
+\subsection{Review}
+
+This policy shall be reviewed at least annually by Maker Society Leadership.
+
+
+
+
+\newrule{Key Access Policy}{July 9, 2023}
+
+\subsection{Background and Purpose}
+
+The Mines Maker Society is committed to developing a strong “making community” at Colorado School of Mines. The Maker Society will enable these individuals to make anything that they wish to create in the easiest conceivable way for the person wishing to learn (while complying with Mines’ regulations and all applicable laws). Part of this mission includes maintaining access to the Blaster Design Factory outside of Space Captain Hours. 
+
+This policy outlines the process required for a member of the Maker Society to receive key access to the Blaster Design Factory.
+
+\subsection{Policy}
+
+Members of the Mines Maker Society may petition to get a key to access the Blaster Design Factory when they:
+
+\begin{itemize}
+    \item Are an active member of the Mines Maker Society for greater than two months
+    \item Have a valid reason to be inside the Space after hours, including, but not limited to:
+    \begin{itemize}
+        \item Have an active project for which they are using MMS tools for extended periods of time and would otherwise disrupt accessibility to other members of the Mines community
+        \item Holds an Executive Board, Leadership Board, or Chair position, or Committee assignment within the Mines Maker Society
+        \item Are a Space Captain
+    \end{itemize}
+    \item Receive recommendation from an individual who currently has possession of a key
+\end{itemize}
+
+Following a petition from an individual requesting a key, the Mines Maker Society Leadership Board will review the request within two (2) Leadership Board meetings, unless postponed by recommendation of the Maker Society Executive Team, and issue a recommendation to the President, Vice President, Treasurer, and Head Space Captain.
+
+After receiving recommendation from the Leadership Team, a three-fourths vote from the President, Vice President, Treasurer, and Head Space Captain shall confer possession of a key to the member.
+
+\subsection{Conditions for Key Possession}
+
+Once possession of a key has been conferred to a member, those members are expected to uphold all Blaster Design Factory and Mines Maker Society rules to the highest standard. 
+Current Keyholders, Maker Society Leadership, and Maker Society Executive Board may review a member’s access to keys should a keyholder be in violation of Maker Society rules or cause other concerns that need to be addressed. Concerns shall be forwarded to the Club Advisor and/or other administration as pertinent.
+
+\subsection{Review}
+
+This policy shall be reviewed at least annually by Maker Society Leadership.
+
+
+
+
+\newrule{Responsibilities of Established Leadership Positions}{July 9, 2023}
+
+\subsection{Background and Purpose}
+
+The Mines Maker Society is committed to developing a strong “making community” at Colorado School of Mines. The Maker Society will enable these individuals to make anything that they wish to create in the easiest conceivable way for the person wishing to learn (while complying with Mines’ regulations and all applicable laws). A critical part of the success of the Maker Society is the Establishment of a Leadership Board to aid the Executive Board in accomplishing these goals.
+
+This policy outlines the responsibilities and expectations of those serving on the Leadership Board. 
+
+\subsection{Leadership Board}
+
+Members of the Leadership Board should abide by the following expectations.
+
+\begin{enumerate}
+    \item General Expectations 
+    \begin{enumerate}
+        \item Uphold Mines Honor Code and the Blaster Design Factory Rules and Policies to the highest standard. 
+        \item Conduct yourself as a professional.
+        \item Treat people with respect, do not discriminate, and respect boundaries.
+        \item Help host at least one (1) General Meeting per semester.
+    \end{enumerate}
+    \item Blaster Blaster Blaster (Blaster Blaster Blaster Blaster) 
+    \begin{enumerate}
+        \item Work with Office of the President to maintain and repair the Blaster Blaster when requested
+        \item Implement design upgrades for the Blaster Blaster 
+    \end{enumerate}
+    \item Mines Foundation Liaison 
+    \begin{enumerate}
+        \item During the Fall Semester, lead 3D printed Blaster production for the Foundation’s \#idigmines campaign
+        \item Work with the Foundation on other promotional projects as needed, within reason
+        \item Work with the Foundation to aid the Mines Maker Society in fundraising for Magic Wheelchair and general club affairs (Goldmine, etc.)
+    \end{enumerate}
+    \item Events Coordinator  
+    \begin{enumerate}
+        \item Ensure that events are approved and create signup links
+        \item Work with the Leadership Board to ensure general meeting activities are run every general meeting. 
+        \item Post events to the Daily Blast and work with the Marketing Coordinator to post events on Maker Society communication channels.
+        \item May, under consent of the Executive Board, create committees and subcommittees for large-scale Mines Maker Society and Blaster Design Factory events.
+    \end{enumerate}
+    \item Marketing Coordinator 
+    \begin{enumerate}
+        \item Maintain a branding standard for Mines Maker Society and Blaster Design Factory
+        \item Actively run the Instagram account for Mines Maker Society
+        \item Take photos and videos of projects, workshops, and events
+        \item Advertise Mines Maker Society events on Instagram
+        \item For sufficiently large events, coordinate an Instagram takeover on the @coloradoschoolofmines Instagram
+        \item May, under consent of the Executive Board, create a Marketing Committee to delegate duties.
+    \end{enumerate}
+    \item Webmaster 
+    \begin{enumerate}
+        \item Update and maintain the website when needed
+        \item Maintain the Google knowledge panel for the Blaster Design Factory
+    \end{enumerate}
+    \item Magic Wheelchair 
+    \begin{enumerate}
+        \item Make children’s dreams come true
+        \item Work with an outside organization to find a child to design a costume for
+        \item Organize service events to build the costume with other club members 
+        \item Deliver the final costume to the child before Halloween.
+    \end{enumerate}
+    \item Space Improvement 
+    \begin{enumerate}
+        \item Will improve the Blaster Design Factory (BDF) in either a functional or artistic way
+        \item Coordinate at least one BDF improvement weekend per semester
+        \item Shall chair a Committee of Space Improvement and Maintenance to fulfill the duties of the Office and may delegate Improvement/Maintenance responsibilities to members of such Committee
+        % TODO: Establish Space Improvement and Space Maintenance Committee
+    \end{enumerate}
+    \item Historian 
+    \begin{enumerate}
+        \item Shall provide the Executive and Leadership Boards with Maker Society and Blaster Design Factory History upon their request to aid in decision making
+        \item It is recommended that the Historian shall be composed of the most senior member of the Mines Maker Society
+        \item The Historian may, at their discretion, designate, in part or in whole, their vote on the Leadership Board, to another member of the Mines Maker Society, though no member of the Mines Maker Society may cast more than one (1) vote.
+        \item Shall have the ability to declare themselves a nonvoting member of the Leadership Board and, if they shall elect to do so, will not be counted for the purposes of Quorum
+    \end{enumerate}
+    \item Clerk
+    \begin{enumerate}
+        \item Shall keep the Agenda and Meeting Minutes for Leadership Board Meetings
+        \item Shall, with the consent of the Executive Board, keep the Agenda and Minutes for Executive Board meetings
+        \item Shall ensure that all Maker Society policies are reviewed according to their respective policy review schedules.
+    \end{enumerate}
+\end{enumerate}
+
+
+Pursuant to the Bylaws of the Mines Maker Society, positions on the Leadership Board “are ad hoc and may be adjusted at any time to suit club needs.” 
+
+Appointed positions shall serve one-year terms equivalent to the Executive Board of the Maker Society and be reelected yearly at the same time, as with the other Officers of the Maker Society, if not dissolved by the Executive Board.
+
+The same person may hold multiple positions on the Leadership Board and Executive Board with the consent of the Executive Board, but they shall only receive one (1) vote. However, no person shall hold multiple positions on the Executive Board.
+
+\subsection{Chairs}
+The Executive Board may also create Committees for short-term appointments. Each Committee shall consist of a Chair appointed by the Executive Board and other members so determined. Unless otherwise decided by the Executive Board, Chairs and Committee members shall be nonvoting. This section shall not be construed as to remove a vote from a Voting member of the Executive or Leadership Board. However, shall a member of the Executive and/or Leadership Board be granted a vote by a Committee Assignment, they shall only receive one (1) vote total.
+
+The Executive Board may dissolve a Committee at any time.
+
+\subsection{Sanctions}
+
+The Executive Board shall reserve the right to sanction or assign consequences to members of the Leadership Board for violations of the Bylaws of the Mines Maker Society, Maker Society Rules and Policies, or the Colorado School of Mines Student Code of Conduct. These sanctions shall abide by all Mines Policies, especially the Student Code of Conduct.
+
+The Executive Board may request advice from its Faculty Advisor, Historian, or other Leadership and Club members should they deem necessary. SAIL should be notified about incidents when appropriate.
+
+\subsection{Review}
+
+This policy may be reviewed at any time pursuant to the Bylaws of the Mines Maker Society, and this policy shall be reviewed at least annually by the Maker Society Executive Board.
+
+
+
+
+\newrule{Locker and Bin Storage Policy}{Revised July 9, 2023}
+
+\subsection{Background and Purpose}
+
+The Mines Maker Society is committed to developing a strong “making community” at Colorado School of Mines. The Maker Society will enable these individuals to make anything that they wish to create in the easiest conceivable way for the person wishing to learn (while complying with Mines’ regulations and all applicable laws).
+
+A service that the Club provides is the ability to store certain projects for medium-term storage.
+
+\subsection{Policy}
+
+Any individual of the Mines Community may request to have a locker or storage bin to store items.
+
+Individuals using storage spaces are expected to comply with all Maker Society policies. At all times, items must be stored safely according to EHS guidelines. Individuals understand that storage spaces may be subject to search for safety and other reasonable concerns. The Maker Society Executive and Leadership Boards reserve the right to revoke storage privileges, and individuals will be given a minimum one-week (5 business day) warning to remove their belongings from the Blaster Design Factory, after which the items will be disposed or donated.
+
+Mines Community members may reserve a locker when a locker is available. Students may not use more than one locker at a time. Locker access shall be reviewed at the end of the Fall and Spring semesters.
+
+Members of the Mines Maker Society may petition to use a storage bin to store longer-term projects and supplies for events. This petition shall require a two-thirds majority of the Executive and Leadership Boards for approval, unless the threshold is changed by a majority of the Executive Board. Storage bins may be used for one project for no longer than the semester in which they were requested, unless extended by the Executive and Leadership Boards under the procedures outlined above.
+
+\subsection{Review}
+
+This policy shall be reviewed at least annually by Maker Society Leadership.
+
+
+
+
+\newrule{Departmental Partnerships}{July 28, 2023}
+
+\subsection{Background and Purpose}
+
+The Mines Maker Society is committed to developing a strong “making community” at the Colorado School of Mines. A core part of developing this community is partnerships with other Mines Departments, Mines Organizations, and other community causes.
+
+\subsection{Policy}
+
+When a department is interested in working with the Maker Society, they should reach out to the President or the Vice President of the club. This request should include:
+\begin{itemize}    
+    \item Contact Information
+    \item Description of the project and/or the requirements
+    \item Timeline of the event or project
+    \item Description of services from the Maker Society
+    \item Estimated cost and which party will cover the cost
+\end{itemize}
+
+Once the request is received, the Executive Board will determine if it is feasible for the club to proceed with the collaboration. If it is, it will be brought to the Leadership Board within two (2) meetings, where it will determine if it is feasible. If approved, it will be assigned to a Maker Society member, who will then lead the project. The individual requesting the project may be requested to appear at leadership board meetings. 
+
+If the project is started and it is then determined that the project is not feasible, the Leadership and Executive Board may cancel the project with a two-thirds (2/3) affirmative vote.
+
+\subsection{Review}
+
+This policy shall be reviewed at least annually by Maker Society Leadership.
+
+
+
+
+\newrule{Printer Reservation Policy}{July 28, 2023}
+
+\subsection{Background and Purpose}
+
+The Mines Maker Society is committed to developing a strong “making community” at Colorado School of Mines. The Maker Society will enable these individuals to make anything that they wish to create in the easiest conceivable way for the person wishing to learn (while complying with Mines’ regulations and all applicable laws).
+
+This policy outlines rules for reserving 3D printers for long-term use. 
+
+\subsection{Policy}
+
+Individuals of the Mines Community may petition to reserve 3D printer capacity.
+An individual must petition to reserve printers in accordance with the Departmental Partnerships Policy. Individuals requesting to reserve a printer to use more than one (1) kilogram of filament are expected to cover the cost of the filament.
+
+Under the discretion of the Liaison to the Mines Foundation, one (1) printer may be reserved each Fall semester (and leading up to the \#idigmines Campaign) for the printing of Golden Blasters.
+
+\subsection{Review}
+
+This policy shall be reviewed at least annually by Maker Society Leadership.
+
+
+
+
+\newrule{Space Cleanliness}{July 28, 2023}
+
+\subsection{Background and Purpose}
+The Mines Maker Society is committed to developing a strong “making community” at Colorado School of Mines. The Maker Society will enable these individuals to make anything that they wish to create in the easiest conceivable way for the person wishing to learn (while complying with Mines’ regulations and all applicable laws).
+
+An important part of a strong making community is ensuring that clean and space safe to work in.
+
+\subsection{Policy}
+
+In order to maintain a clean and safe space, please follow these guidelines:
+\begin{itemize}
+    \item If you write on the whiteboard tables or the glass, wipe it away before you leave your work area.
+    \item If you take tools or materials out of any of the chests, cabinets, materials cart, or the cage, return what was removed back to it’s original location once you finish your work for the day.
+    \item If you use a machine in the Blaster Design Factory, turn off the machine once you have finished using it (3D printers only need to be turned off over breaks unless in use).
+    \item If you are going to be leaving your work area for greater than twenty (20) minutes, clean up the spot that you were working on to make it look like you haven’t worked there. 
+    \item Food in the refrigerator/freezer must be labeled and must not be kept for longer than one (1) week. Maker Society Administration and Space Captains reserve the right to dispose of rotting/old food.
+    \item If you’re using cutting tools that leave particles on the floor, it is your responsibility to vacuum the floor and the surrounding areas using the shop-vac.
+    \item If using the vinyl cutter, you must remember to remove any images copied to or downloaded to the vinyl cutter computer before logging off. Additionally, all vinyl/transfer paper scraps must be thrown away when done.
+    \item Unplug hot glue guns when not in use.
+    \item Turn off the soldering iron when not in use.
+\end{itemize}
+
+This is not an exhaustive list. The members of the Maker Society Executive and Leadership Boards and Space Captains may request that individuals and groups abide by reasonable expectations.
+
+
+\subsection{Sanctions}
+
+Failure to follow these guidelines will result in a meeting with a member of the Executive Board. Appropriate sanctions may be determined.
+
+\subsection{Review}
+
+This policy shall be reviewed at least annually by Maker Society Leadership.
+
+
+
+
+
+
+
+
+    
+
+
+\end{document}
